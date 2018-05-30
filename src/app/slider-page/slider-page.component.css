@@ -1,0 +1,13 @@
+.items {
+  padding-left: 140px;
+  max-width: 300px;
+  max-height: 300px;
+  padding-right: 500px;
+  text-align: center;
+}
+
+.leftImg,
+.rightImg {
+  margin: 30px;
+}
+

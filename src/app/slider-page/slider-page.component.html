@@ -1,0 +1,19 @@
+<div class="container">
+  <div ng2-carouselamos
+       [items]="items"
+       [$prev]="prev"
+       [$next]="next"
+       [$item]="item">
+  </div>
+  <ng-template #prev>
+    <img src="../../assets/images/left-arrow.png" alt="leftImg">
+  </ng-template>
+  <ng-template #next>
+    <img src="../../assets/images/right-arrow.png" alt="rightImg">
+  </ng-template>
+  <ng-template #item let-item let-i="index">
+    <div class="items">
+      <img src="{{ item.name }}" alt="ballsImg">
+    </div>
+  </ng-template>
+</div>
