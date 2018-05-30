@@ -1,27 +1,32 @@
 <div class="container">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a href="#" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="/slider" class="nav-link">Slider</a>
-        </li>
-        <li class="nav-item">
-          <a href="/calculator" class="nav-link">Calculator</a>
-        </li>
-        <li class="nav-item">
-          <a href="/battleShip" class="nav-link">BattleShip</a>
-        </li>
-        <li class="nav-item">
-          <a href="/toDoList" class="nav-link">ToDoList</a>
-        </li>
-      </ul>
+      <div class="navbar-header">
+        <img src="../assets/logo/logo.jpg" alt="logo" class="navbar-brand logo-img">
+      </div>
+      <div class="navbarLink">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/slider" class="nav-link">Slider</a>
+          </li>
+          <li class="nav-item">
+            <a href="/calculator" class="nav-link">Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a href="/battleShip" class="nav-link">BattleShip</a>
+          </li>
+          <li class="nav-item">
+            <a href="/toDoList" class="nav-link">ToDoList</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
   <div class="row">
-    <div class="col-xs-10 offset-xs-10">
+    <div class="col-xs-10">
       <app-home-page></app-home-page>
       <app-slider-page></app-slider-page>
     </div>

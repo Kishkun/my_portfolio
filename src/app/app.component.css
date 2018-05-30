@@ -1,0 +1,12 @@
+.navbar-header {
+  width: 80%;
+}
+
+.navbar-header .logo-img {
+  width: 15%;
+  border-radius: 50%;
+}
+
+.navbarLink {
+  width: 100%;
+}
