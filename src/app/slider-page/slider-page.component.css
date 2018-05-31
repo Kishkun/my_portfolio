@@ -1,7 +1,15 @@
+.wrapper {
+  margin-top: 5%;
+}
+
+.wrapper hr {
+  margin-bottom: 15%;
+}
+
 .items {
   max-width: 100%;
   max-height: 100%;
-  padding-left: 30%;
+  padding-left: 28%;
   text-align: center;
 }
 

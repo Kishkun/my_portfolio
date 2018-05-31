@@ -10,3 +10,11 @@
 .navbarLink {
   width: 100%;
 }
+
+.nav-link {
+  color: darkblue;
+}
+
+.nav-link:hover {
+  background-color: aliceblue;
+}

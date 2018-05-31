@@ -5,12 +5,12 @@
         <img src="../assets/logo/logo.jpg" alt="logo" class="navbar-brand logo-img">
       </div>
       <div class="navbarLink">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a href="#" class="nav-link">Home</a>
+        <ul class="nav nav-tabs">
+          <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <a routerLink="/" class="nav-link">Home</a>
           </li>
-          <li class="nav-item">
-            <a href="/slider" class="nav-link">Slider</a>
+          <li class="nav-item" routerLinkActive="active">
+            <a routerLink="/slider" class="nav-link">Slider</a>
           </li>
           <li class="nav-item">
             <a href="/calculator" class="nav-link">Calculator</a>
@@ -26,9 +26,8 @@
     </div>
   </nav>
   <div class="row">
-    <div class="col-xs-10">
-      <app-home-page></app-home-page>
-      <app-slider-page></app-slider-page>
+    <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12">
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
