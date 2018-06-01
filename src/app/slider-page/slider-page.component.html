@@ -1,6 +1,8 @@
-<div class="wrapper">
+<div class="text-left caption">
   <h1>My slider</h1>
   <hr>
+</div>
+<div class="wrapper">
   <div ng2-carouselamos
        [items]="items"
        [$prev]="prev"
@@ -18,5 +20,8 @@
       <img src="{{ item.name }}" alt="ballsImg">
     </div>
   </ng-template>
+  <div class="text-left button-wrapper">
+    <button class="btn btn-gray" (click)="onBeckToHomePage()">back to home page</button>
+  </div>
 </div>
 

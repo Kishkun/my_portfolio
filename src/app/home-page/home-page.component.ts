@@ -19,6 +19,7 @@ export class HomePageComponent implements OnInit {
   }
 
   openCalculatorPage() {
+    this.router.navigate(['/calculator']);
     console.log('open calculator');
   }
 

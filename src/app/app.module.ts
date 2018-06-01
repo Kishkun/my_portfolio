@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { SliderPageComponent } from './slider-page/slider-page.component';
+import { CalculatorPageComponent } from './calculator-page/calculator-page.component';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { AppRoutingModule } from './app-routing.module';
 import {FormsModule} from '@angular/forms';
@@ -12,7 +13,8 @@ import {FormsModule} from '@angular/forms';
   declarations: [
     AppComponent,
     HomePageComponent,
-    SliderPageComponent
+    SliderPageComponent,
+    CalculatorPageComponent
   ],
   imports: [
     BrowserModule,

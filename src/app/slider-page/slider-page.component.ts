@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-slider-page',
@@ -8,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class SliderPageComponent implements OnInit {
   items: Array< any > = [];
 
-  constructor() {
+  constructor(private router: Router) {
     this.items = [
-      { name: "/assets/images/balls1.png" },
+      { name: "./assets/images/balls1.png" },
       { name: "/assets/images/balls2.png" },
       { name: "/assets/images/balls3.png" },
       { name: "/assets/images/balls4.png" },
@@ -22,4 +23,8 @@ export class SliderPageComponent implements OnInit {
   ngOnInit() {
   }
 
+  onBeckToHomePage() {
+    this.router.navigate(['/'])
+    console.log('back to home page');
+  }
 }
