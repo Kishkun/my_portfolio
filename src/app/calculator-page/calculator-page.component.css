@@ -32,3 +32,10 @@
   width: 48%;
 }
 
+.button-bottom-wrapper button {
+  margin-top: 3%;
+}
+
+.button-bottom-wrapper button:hover {
+  background-color: aliceblue;
+}

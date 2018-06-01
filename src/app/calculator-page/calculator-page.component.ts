@@ -7,8 +7,20 @@ import {Component, OnInit} from '@angular/core';
 })
 export class CalculatorPageComponent implements OnInit {
 
+  numbers: number;
+  displayResult: string;
+  operation: string;
+  newOperations: string
+  firstNumber: number;
+  secondNumber: number;
+
+
   constructor() {
 
+  }
+
+  onNumberButtonClick() {
+    console.log('click number');
   }
 
   ngOnInit() {
