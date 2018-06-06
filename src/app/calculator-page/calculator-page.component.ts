@@ -68,15 +68,16 @@ export class CalculatorPageComponent implements OnInit {
       this.secondNumber = 0;
       this.newOperation = '';
     } else if (this.commandOperation === ',') {
-      // if (this.displayResult !== '') {
-      //   this.displayResult = this.displayResult + ',';
-      //   this.firstNumber = +this.displayResult;
-      // }
+      if (this.displayResult !== '') {
+        this.displayResult = this.displayResult + ',';
+        this.firstNumber = +this.displayResult;
+      }
       console.log('this button do not work!');
     } else if (this.commandOperation === '%') {
-      this.displayResult = +this.displayResult / 100;
+      this.displayResult = String(+this.displayResult / 100);
       console.log('this button do not work!');
-    } else if (this.commandOperation === '%C2%B1') {
+    } else if (this.commandOperation === '±') {
+      this.displayResult = String(-this.firstNumber);
       console.log('this button do not work!');
     }
   }
