@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-calculator-page',
@@ -12,47 +13,82 @@ export class CalculatorPageComponent implements OnInit {
   operation: string;
   firstNumber: number;
   result: number;
+  resultButton: string;
   secondNumber: number;
-  newOperations: string;
   commandOperation: string;
+  newOperation: string;
 
 
-  constructor() {
+  constructor(private router: Router) {
     this.displayResult = '';
-    this.newOperations = '';
+    this.operation = '';
+    this.result = 0;
+    this.newOperation = '';
   }
 
   onNumberButtonClick(e) {
     this.number = e.target.innerText;
-    this.displayResult += this.number;
-    this.firstNumber = +this.displayResult;
-  }
-
-  onOperationClick(e) {
-    this.operation = e.target.innerText;
-    if (this.operation === '+') {
-      this.displayResult = '';
-      this.secondNumber = +this.number;
-    } else if (this.operation === '=') {
-      this.result = this.firstNumber + this.secondNumber;
-      this.displayResult = String(this.result);
-      console.log(this.result);
-      console.log(this.firstNumber);
-      console.log(this.secondNumber);
+    this.displayResult += +this.number;
+    if (this.newOperation === '') {
+      this.firstNumber = +this.displayResult;
+    } else if (this.newOperation !== '') {
+      this.secondNumber = +this.displayResult;
     }
   }
 
-  onCommandOperation(e) {
+  onOperationButtonClick(e) {
+    this.operation = e.target.innerText;
+    this.newOperation = this.operation;
+    this.displayResult = '';
+  }
+
+  onResultButtonClick(e) {
+    this.resultButton = e.target.innerText;
+    if (this.newOperation === '+') {
+      this.result = this.firstNumber + this.secondNumber;
+    } else if (this.newOperation === '-') {
+      this.result = this.firstNumber - this.secondNumber;
+    } else if (this.newOperation === '*') {
+      this.result = this.firstNumber * this.secondNumber;
+    } else if (this.newOperation === '÷') {
+      this.result = this.firstNumber / this.secondNumber;
+      if (this.result === Infinity) {
+        alert('Warning!can not be divided by zero!');
+        this.result = 0;
+      }
+    }
+    this.displayResult = String(this.result);
+  }
+
+  onCommandOperationButtonClick(e) {
     this.commandOperation = e.target.innerText;
     if (this.commandOperation === 'AC') {
       this.displayResult = '';
       this.firstNumber = 0;
       this.secondNumber = 0;
-      console.log(this.commandOperation);
+      this.newOperation = '';
+    } else if (this.commandOperation === ',') {
+      // if (this.displayResult !== '') {
+      //   this.displayResult = this.displayResult + ',';
+      //   this.firstNumber = +this.displayResult;
+      // }
+      console.log('this button do not work!');
+    } else if (this.commandOperation === '%') {
+      this.displayResult = +this.displayResult / 100;
+      console.log('this button do not work!');
+    } else if (this.commandOperation === '%C2%B1') {
+      console.log('this button do not work!');
     }
+  }
+
+  onBeckToHomePage() {
+    this.router.navigate(['/']);
+    // console.log('back to home menu');
   }
 
   ngOnInit() {
   }
-
 }
+
+
+

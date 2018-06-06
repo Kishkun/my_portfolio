@@ -24,7 +24,7 @@ export class SliderPageComponent implements OnInit {
   }
 
   onBeckToHomePage() {
-    this.router.navigate(['/'])
-    console.log('back to home page');
+    this.router.navigate(['/']);
+    // console.log('back to home page');
   }
 }
