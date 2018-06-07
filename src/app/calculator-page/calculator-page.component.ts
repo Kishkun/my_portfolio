@@ -13,7 +13,6 @@ export class CalculatorPageComponent implements OnInit {
   operation: string;
   firstNumber: number;
   result: number;
-  resultButton: string;
   secondNumber: number;
   commandOperation: string;
   newOperation: string;
@@ -28,11 +27,12 @@ export class CalculatorPageComponent implements OnInit {
 
   onNumberButtonClick(e) {
     this.number = e.target.innerText;
-    this.displayResult += +this.number;
     if (this.newOperation === '') {
+      this.displayResult += this.number;
       this.firstNumber = +this.displayResult;
     } else if (this.newOperation !== '') {
-      this.secondNumber = +this.displayResult;
+      this.secondNumber = +this.number;
+      this.displayResult = String(this.secondNumber);
     }
   }
 
@@ -40,10 +40,12 @@ export class CalculatorPageComponent implements OnInit {
     this.operation = e.target.innerText;
     this.newOperation = this.operation;
     this.displayResult = '';
+    if (this.secondNumber !== undefined) {
+      this.onResultButtonClick();
+    }
   }
 
-  onResultButtonClick(e) {
-    this.resultButton = e.target.innerText;
+  onResultButtonClick() {
     if (this.newOperation === '+') {
       this.result = this.firstNumber + this.secondNumber;
     } else if (this.newOperation === '-') {
@@ -58,6 +60,7 @@ export class CalculatorPageComponent implements OnInit {
       }
     }
     this.displayResult = String(this.result);
+    this.firstNumber = this.result;
   }
 
   onCommandOperationButtonClick(e) {
@@ -74,11 +77,11 @@ export class CalculatorPageComponent implements OnInit {
       }
       console.log('this button do not work!');
     } else if (this.commandOperation === '%') {
-       // this.displayResult = String(+this.displayResult / 100);
-      console.log('this button do not work!');
+      this.displayResult = String(+this.displayResult / 100);
+      this.firstNumber = +this.displayResult;
     } else if (this.commandOperation === '±') {
-      // this.displayResult = String(-this.firstNumber);
-      console.log('this button do not work!');
+      this.displayResult = String(-this.firstNumber);
+      this.firstNumber = +this.displayResult;
     }
   }
 
