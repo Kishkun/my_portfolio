@@ -15,19 +15,17 @@ export class HomePageComponent implements OnInit {
 
   openSliderPage() {
     this.router.navigate(['/slider']);
-    // console.log('open slider');
   }
 
   openCalculatorPage() {
     this.router.navigate(['/calculator']);
-    console.log('open calculator');
   }
 
   openBattleShipPage() {
-    console.log('open battleShip');
+    this.router.navigate(['/battleShip']);
   }
 
-  opentoDoListPage() {
-    console.log('open toDoList');
+  openToDoListPage() {
+    console.log('under development!');
   }
 }

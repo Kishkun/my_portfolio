@@ -8,13 +8,15 @@ import { CalculatorPageComponent } from './calculator-page/calculator-page.compo
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { AppRoutingModule } from './app-routing.module';
 import {FormsModule} from '@angular/forms';
+import { BattleShipPageComponent } from './battle-ship-page/battle-ship-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     SliderPageComponent,
-    CalculatorPageComponent
+    CalculatorPageComponent,
+    BattleShipPageComponent
   ],
   imports: [
     BrowserModule,

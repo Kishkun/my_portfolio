@@ -1,9 +1,9 @@
 .caption h1 {
-  margin-top: 5%;
+  margin-top: 50px;
 }
 
 .caption hr {
-  margin-bottom: 15%;
+  margin-bottom: 50px;
 }
 
 .wrapper .items {
@@ -14,7 +14,7 @@
 }
 
 .wrapper .button-wrapper button  {
-  margin-top: 20%;
+  margin-top: 150px;
 }
 
 .wrapper .button-wrapper button:hover {

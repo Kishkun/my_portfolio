@@ -11,12 +11,12 @@ export class SliderPageComponent implements OnInit {
 
   constructor(private router: Router) {
     this.items = [
-      { name: "./assets/images/balls1.png" },
-      { name: "/assets/images/balls2.png" },
-      { name: "/assets/images/balls3.png" },
-      { name: "/assets/images/balls4.png" },
-      { name: "/assets/images/balls5.png" },
-      { name: "/assets/images/balls6.png" }
+      { name: '/assets/images/balls1.png' },
+      { name: '/assets/images/balls2.png' },
+      { name: '/assets/images/balls3.png' },
+      { name: '/assets/images/balls4.png' },
+      { name: '/assets/images/balls5.png' },
+      { name: '/assets/images/balls6.png' }
     ];
   }
 
@@ -25,6 +25,5 @@ export class SliderPageComponent implements OnInit {
 
   onBeckToHomePage() {
     this.router.navigate(['/']);
-    // console.log('back to home page');
   }
 }

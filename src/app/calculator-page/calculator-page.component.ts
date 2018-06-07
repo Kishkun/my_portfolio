@@ -74,17 +74,16 @@ export class CalculatorPageComponent implements OnInit {
       }
       console.log('this button do not work!');
     } else if (this.commandOperation === '%') {
-      this.displayResult = String(+this.displayResult / 100);
+      // this.displayResult = String(+this.displayResult / 100);
       console.log('this button do not work!');
     } else if (this.commandOperation === '±') {
-      this.displayResult = String(-this.firstNumber);
+      // this.displayResult = String(-this.firstNumber);
       console.log('this button do not work!');
     }
   }
 
   onBeckToHomePage() {
     this.router.navigate(['/']);
-    // console.log('back to home menu');
   }
 
   ngOnInit() {
