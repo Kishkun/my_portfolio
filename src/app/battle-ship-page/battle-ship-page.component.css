@@ -1,0 +1,65 @@
+.caption h1 {
+  margin-top: 50px;
+}
+
+.caption hr {
+  margin-bottom: 20px;
+}
+
+.container .board {
+  position: relative;
+  width: 724px;
+  height: 583px;
+  margin: auto;
+  background: url("../../assets/imagesBattleShip/board.jpg") no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+
+.container .messageArea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgb(83, 175, 19);
+}
+.hit {
+  background: url("../../assets/imagesBattleShip/ship.png") no-repeat center center;
+}
+.miss {
+  background: url("../../assets/imagesBattleShip/miss.png") no-repeat center center;
+}
+.container .board table {
+  border-spacing: 0;
+  /* could use border-collapse instead */
+  /* border-collapse: collapse; */
+  position: absolute;
+  left: 121px;
+  top: 70px;
+}
+.container .board td {
+  width: 68px;
+  height: 68px;
+}
+
+.container .board form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  background-color: black;
+}
+
+.container .board form input {
+  background-color: rgb(152, 207, 113);
+  border-color: rgb(83, 175, 19);
+  font-size: 1em;
+}
+
+.button-bottom-wrapper button {
+  margin-top: 20px;
+}
+
+.button-bottom-wrapper button:hover {
+  background-color: aliceblue;
+}

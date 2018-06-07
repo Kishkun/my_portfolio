@@ -1,0 +1,21 @@
+<div class="text-left caption">
+  <h1>My battleShip</h1>
+  <hr>
+</div>
+<div class="container">
+  <div class="board">
+    <div class="messageArea" [textContent]="displayMessage"></div>
+    <table>
+      <tr *ngFor="let tr of table">
+        <td *ngFor="let td of tr" class="{{ td }}"></td>
+      </tr>
+    </table>
+    <form>
+      <input type="text" #guess (keyup.enter)="handleFireButton(guess.value); guess.value=''" placeholder="A0">
+      <input type="button" (click)="handleFireButton(guess.value); guess.value=''" value="Fire!">
+    </form>
+  </div>
+</div>
+<div class="text-left button-bottom-wrapper">
+  <button class="btn btn-gray" (click)="onBeckToHomePage()">back to home page</button>
+</div>
