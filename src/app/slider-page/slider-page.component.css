@@ -20,3 +20,7 @@
 .wrapper .button-wrapper button:hover {
   background-color: aliceblue;
 }
+
+.wrapper img {
+  border-radius: 50%;
+}
