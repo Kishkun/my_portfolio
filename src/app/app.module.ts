@@ -7,8 +7,10 @@ import { SliderPageComponent } from './slider-page/slider-page.component';
 import { CalculatorPageComponent } from './calculator-page/calculator-page.component';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { AppRoutingModule } from './app-routing.module';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { BattleShipPageComponent } from './battle-ship-page/battle-ship-page.component';
+import { ToDoPageComponent } from './to-do-page/to-do-page.component';
+import { ToDoService } from './services/to-do.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { BattleShipPageComponent } from './battle-ship-page/battle-ship-page.com
     HomePageComponent,
     SliderPageComponent,
     CalculatorPageComponent,
-    BattleShipPageComponent
+    BattleShipPageComponent,
+    ToDoPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,7 @@ import { BattleShipPageComponent } from './battle-ship-page/battle-ship-page.com
     Ng2CarouselamosModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ToDoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,17 +1,17 @@
 .home-menu {
-  margin-top: 5%;
+  margin-top: 50px;
 }
 
 .home-menu h1 {
-  margin-bottom: 5%;
+  margin-bottom: 50px;
 }
 
 .home-menu .home-image {
-  margin-top: 5%;
+  margin-top: 50px;
 }
 
 .home-menu .button-group button {
-  margin-right: 5%;
+  margin-right: 50px;
 }
 
 .home-menu .button-group button:hover {

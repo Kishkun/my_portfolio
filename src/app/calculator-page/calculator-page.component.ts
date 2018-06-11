@@ -71,10 +71,7 @@ export class CalculatorPageComponent implements OnInit {
       this.secondNumber = 0;
       this.newOperation = '';
     } else if (this.commandOperation === ',') {
-      if (this.displayResult !== '') {
-        this.displayResult = this.displayResult + ',';
-        this.firstNumber = +this.displayResult;
-      }
+      // this.displayResult = +this.displayResult + ',';
       console.log('this button do not work!');
     } else if (this.commandOperation === '%') {
       this.displayResult = String(+this.displayResult / 100);

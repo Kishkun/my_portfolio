@@ -1,0 +1,14 @@
+<div class="text-left caption">
+  <h1>My toDoList</h1>
+  <hr>
+</div>
+<div class="container">
+  <div class="header-wrapper">
+    <img src="../../assets/imagesToDo/logo.jpg" width="50px" alt="logoToDo">
+    <h1>notes</h1>
+  </div>
+  <div class="todo-input-wrapper">
+    <input type="text" [(ngModel)]="todoText" value="{{ todoText }}">
+    <button class="btn btn-info" (click)="onAddToDoClick()">Submit</button>
+  </div>
+</div>
