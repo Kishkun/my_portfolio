@@ -5,11 +5,11 @@
   text-align: center;
 }
 
-.wrapper .button-wrapper button  {
+.wrapper .button-bottom-wrapper button  {
   margin-top: 150px;
 }
 
-.wrapper .button-wrapper button:hover {
+.wrapper .button-bottom-wrapper button:hover {
   background-color: aliceblue;
 }
 

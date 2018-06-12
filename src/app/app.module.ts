@@ -12,6 +12,7 @@ import { BattleShipPageComponent } from './battle-ship-page/battle-ship-page.com
 import { ToDoPageComponent } from './to-do-page/to-do-page.component';
 import { TaskService } from './services/task.service';
 import {TaskItemComponent} from './to-do-page/task-item/task-item.component';
+import {HttpModule} from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import {TaskItemComponent} from './to-do-page/task-item/task-item.component';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpModule,
     Ng2CarouselamosModule,
     AppRoutingModule
   ],

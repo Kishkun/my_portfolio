@@ -44,3 +44,11 @@
   border-top: 2px solid rgba(73, 204, 249, 1.0);
   border-bottom: 2px solid rgba(73, 204, 249, 1.0);
 }
+
+.button-bottom-wrapper {
+  margin-top: 20px;
+}
+
+.button-bottom-wrapper button:hover {
+  background-color: aliceblue;
+}
