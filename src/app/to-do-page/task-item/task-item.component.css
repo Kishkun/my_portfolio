@@ -1,0 +1,21 @@
+.task-wrapper {
+  border-bottom: 1px solid #efefef;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.deleteButton {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 8px;
+  color: rgba(203, 20, 32, 0.4);
+  border: 2px solid rgba(203, 20, 32, 0.4);
+  background-color: transparent;
+}

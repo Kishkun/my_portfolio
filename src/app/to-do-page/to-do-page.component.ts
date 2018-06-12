@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {TaskService} from '../services/task.service';
 
 @Component({
   selector: 'app-to-do-page',
@@ -6,17 +7,17 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./to-do-page.component.css']
 })
 export class ToDoPageComponent implements OnInit {
-  private todoText: string;
+  taskText: string;
 
-  constructor() {
-    this.todoText = '';
+  constructor(private taskService: TaskService) {
+    this.taskText = '';
   }
 
   ngOnInit() {
   }
 
-  private onAddToDoClick(): void {
-    console.log('ToDo: ', this.todoText);
-    this.todoText = '';
+  onAddToDoClick(): void {
+    this.taskService.addTask(this.taskText);
+    this.taskText = '';
   }
 }
