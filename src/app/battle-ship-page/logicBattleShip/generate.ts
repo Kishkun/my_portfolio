@@ -11,7 +11,7 @@ export class GenerateShips {
     this.boardSize = 7;  // the size of the grid of the playing field
     this.numShips = 3;   // number of ships in the game
     this.shipLength = 3; // the length of each ship (in cages)
-    this.ships = ships;
+    this.ships = ships;  // 3 ships(locations and hits)
   }
 
   generateShipLocations() {
