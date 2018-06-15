@@ -28,4 +28,8 @@ export class HomePageComponent implements OnInit {
   openToDoListPage() {
     this.router.navigate(['/toDoList']);
   }
+
+  openNewToDoPage() {
+    console.log('The project is under development');
+  }
 }

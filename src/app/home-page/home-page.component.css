@@ -17,3 +17,7 @@
 .home-menu .button-group button:hover {
   background-color: aliceblue;
 }
+
+.home-menu .button-group button:last-child {
+  border: 2px solid red;
+}

@@ -1,20 +1,24 @@
-.navbar-header {
-  width: 80%;
+.container .navbar .container-fluid .navbar-header {
+  width: 50%;
 }
 
-.navbar-header .logo-img {
+.container .navbar .container-fluid .navbar-header .logo-img {
   width: 15%;
   border-radius: 50%;
 }
 
-.navbarLink {
+.container .navbar .container-fluid  .navbarLink {
   width: 100%;
 }
 
-.nav-link {
+.container .navbar .container-fluid .navbarLink .nav .nav-link {
   color: darkblue;
 }
 
-.nav-link:hover {
+.container .navbar .container-fluid .navbarLink .nav .nav-link:hover {
   background-color: aliceblue;
+}
+
+.container .navbar .container-fluid .navbarLink .nav .nav-item:last-child {
+  border: 1px solid red;
 }
